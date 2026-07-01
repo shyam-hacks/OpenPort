@@ -1,0 +1,101 @@
+python3 openport.py
+**You'll be prompted to enter the following things: ***
+   Enter IP or domain: scanme.nmap.org
+   Start port (default 1):
+   End port (default 1024):
+   Number of threads (default 100):
+
+Example output:
+   === PORT SCANNER ===
+
+Enter IP or domain: google.com
+[+] Resolved google.com → 142.250.183.142
+
+Start port (default 1): 
+End port (default 1024): 
+Number of threads (default 100): 
+
+[+] Scanning 142.250.183.142 from port 1 to 1024 with 100 threads...
+
+[+] Port 80 OPEN → HTTP/1.1 200 OK
+[+] Port 443 OPEN → 
+
+[+] Scan completed in 22.12 seconds.
+[+] 2 open ports found.
+[+] Results saved to scan_142.250.183.142_20260701_180842.txt
+
+[+] Done.
+
+Got it. You want a clean, professional README for your OpenPort project.
+
+Here's one you can copy, paste, and tweak — no fluff, just straight to the point.
+📄 README.md — OpenPort
+markdown
+
+# OpenPort 🔍
+
+A lightweight, multi-threaded Python port scanner with banner grabbing and file export.
+
+> *"No bullshit. Just open ports."*
+
+---
+
+## 🚀 Features
+
+- Multi-threaded scanning (fast)
+- Supports domain and IP input
+- Banner grabbing from open ports (HTTP, SSH, etc.)
+- User-friendly defaults (just press Enter)
+- Saves results to timestamped `.txt` files
+- No external dependencies — just Python 3
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/yourusername/OpenPort.git
+cd OpenPort
+
+    No additional packages required — uses only Python's standard library.
+
+🧑‍💻 Usage
+bash
+
+python3 openport.py
+
+You'll be prompted to enter:
+text
+
+Enter IP or domain: scanme.nmap.org
+Start port (default 1):
+End port (default 1024):
+Number of threads (default 100):
+
+Press Enter to accept defaults, or type your own values.
+🧪 Example Output
+text
+
+=== PORT SCANNER ===
+
+Enter IP or domain: google.com
+[+] Resolved google.com → 142.250.183.142
+
+Start port (default 1): 
+End port (default 1024): 
+Number of threads (default 100): 
+
+[+] Scanning 142.250.183.142 from port 1 to 1024 with 100 threads...
+
+[+] Port 80 OPEN → HTTP/1.1 200 OK
+[+] Port 443 OPEN → 
+
+[+] Scan completed in 22.12 seconds.
+[+] 2 open ports found.
+[+] Results saved to scan_142.250.183.142_20260701_180842.txt
+
+[+] Done.
+
+📁 Output
+Results are saved automatically as:
+scan_<IP>_<timestamp>.txt
